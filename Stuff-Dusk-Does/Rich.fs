@@ -25,7 +25,7 @@ let animate (c: DiscordRpcClient) =
   let ran = Random()
   while true do
 
-    let r = ran.NextDouble() * 5000.0
+    let r = ran.NextDouble() * 4000.0
     count <- count + 1
 
     RichPresence (
