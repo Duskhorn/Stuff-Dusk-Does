@@ -22,8 +22,10 @@ let processes () =
 
 let animate (c: DiscordRpcClient) =
   let mutable count = 0
+  let ran = Random()
   while true do
 
+    let r = ran.NextDouble() * 5000.0
     count <- count + 1
 
     RichPresence (
@@ -44,7 +46,7 @@ let animate (c: DiscordRpcClient) =
         LargeImageText = "hehe"
       )
     ) |> c.SetPresence
-    Thread.Sleep 3000    
+    Thread.Sleep (int r)
 
 let run () = 
   let client = new DiscordRpcClient("796667055990374400")
