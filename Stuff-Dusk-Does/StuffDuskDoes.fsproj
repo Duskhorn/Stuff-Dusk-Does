@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>DISCORD_SDK</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Rich.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DiscordRichPresence" Version="1.0.169" />
+  </ItemGroup>
+</Project>
